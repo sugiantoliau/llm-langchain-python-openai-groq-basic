@@ -1,6 +1,5 @@
 # llm-langchain-python-basic
 
-
 # LangChain & Agentic AI Exploration
 
 A repository dedicated to learning and implementing LLM orchestration using LangChain. This project transitions from basic sequential chains to an autonomous Agentic AI framework.
@@ -19,5 +18,21 @@ A repository dedicated to learning and implementing LLM orchestration using Lang
 * **Models Used:** `gpt-4o-mini`, `llama-3.1-8b-instant`
 * **Language:** Python 3.11+
 
-## 🔒 Security Note
-This project utilizes `python-dotenv` to manage environments. All private API credentials (`OPENAI_API_KEY`, `GROQ_API_KEY`) are kept local and excluded from version control via `.gitignore`.
+## ⚙️ Setup Instructions
+
+To run these notebooks locally, you need to configure your environment variables securely so the LangChain framework can authenticate with the LLM providers.
+
+
+### 1. Create a `.env` File, then fill your key
+
+```bash
+OPENAI_API_KEY=sk-proj-your_actual_openai_key_here
+GROQ_API_KEY=gsk_your_actual_groq_key_here
+```
+
+### 1. Create a `.gitignore` File
+To prevent your private API keys from accidentally being pushed to GitHub, ensure you have a `.gitignore` file in the root directory of your project containing the following line:
+```
+.env
+.ipynb_checkpoints/
+```
