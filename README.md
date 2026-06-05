@@ -1,4 +1,4 @@
-# llm-langchain-python-basic
+# llm-langchain-python-openai-groq-basic
 
 # LangChain & Agentic AI Exploration
 
@@ -30,9 +30,18 @@ OPENAI_API_KEY=sk-proj-your_actual_openai_key_here
 GROQ_API_KEY=gsk_your_actual_groq_key_here
 ```
 
-### 1. Create a `.gitignore` File
+### 2. Create a `.gitignore` File
 To prevent your private API keys from accidentally being pushed to GitHub, ensure you have a `.gitignore` file in the root directory of your project containing the following line:
 ```
 .env
 .ipynb_checkpoints/
 ```
+
+
+### 3. Open and Run the Notebooks
+
+Launch your Jupyter environment (via VS Code, Jupyter Lab, or Jupyter Notebook) and select the pipeline execution style you want to explore:
+
+- For OpenAI Workflows: Open and run all cells inside llm-langchain-python-openai-basic.ipynb
+
+- For Groq Cloud Workflows: Open and run all cells inside llm-langchain-python-groq-basic.ipynb
